@@ -2403,8 +2403,8 @@
 
 /* Header mobile */
 @media (max-width: 768px) {
-  .brand-mark { width: 58px; height: 44px; }
-  .site-header.is-scrolled .brand-mark { width: 48px; height: 36px; }
+  .brand-mark { width: 72px; height: 54px; }
+  .site-header.is-scrolled .brand-mark { width: 60px; height: 45px; }
   .brand-text { font-size: 0.92rem; }
   .brand-text span:last-child { font-size: 0.58rem; }
   .header-inner { gap: var(--s-3); }
