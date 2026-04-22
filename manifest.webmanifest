@@ -1,0 +1,14 @@
+{
+  "name": "UP Academia Taquaritinga",
+  "short_name": "UP Academia",
+  "description": "Academia e studio de pilates em Taquaritinga/SP.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1E56FF",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

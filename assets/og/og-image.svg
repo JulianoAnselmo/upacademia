@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E1116"/>
+      <stop offset="1" stop-color="#0B2ECC"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="900" cy="120" r="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3D71FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#3D71FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(80,90)">
+    <rect x="0" y="0" width="120" height="120" rx="22" fill="none" stroke="#3D71FF" stroke-width="3"/>
+    <path d="M30 30 L30 68 C30 78.5 38.5 87 49 87 C59.5 87 68 78.5 68 68 L68 30" stroke="#F5F7FA" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M80 87 L80 30 L95 30 C102 30 108 36 108 43 C108 50 102 56 95 56 L80 56" stroke="#1E56FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <text x="80" y="340" font-family="'Space Grotesk', sans-serif" font-size="88" font-weight="700" fill="#F5F7FA" letter-spacing="-3">UP Academia</text>
+  <text x="80" y="410" font-family="Georgia, serif" font-style="italic" font-size="48" fill="#C9CFD6">Musculação &amp; Pilates em alto padrão</text>
+  <text x="80" y="530" font-family="'JetBrains Mono', monospace" font-size="20" fill="#8A929C" letter-spacing="3">TAQUARITINGA — SP · AV. ERNESTO SALVAGNI, 296</text>
+  <text x="80" y="565" font-family="'JetBrains Mono', monospace" font-size="20" fill="#F5F7FA" letter-spacing="3">WHATSAPP · (16) 99615-1525</text>
+  <rect x="1080" y="540" width="40" height="40" rx="20" fill="#1E56FF"/>
+</svg>

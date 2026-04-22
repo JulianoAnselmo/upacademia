@@ -1,0 +1,138 @@
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 135deg;
+}
+
+:root {
+  --c-ink: #0E1116;
+  --c-ink-raised: #1A1F26;
+  --c-ink-soft: #242932;
+  --c-silver: #C9CFD6;
+  --c-silver-dim: #8A929C;
+  --c-paper: #F5F7FA;
+  --c-paper-warm: #EDEFF2;
+  --c-blue: #1E56FF;
+  --c-blue-deep: #0B2ECC;
+  --c-blue-glow: #3D71FF;
+  --c-accent: #FF5B2E;
+
+  --c-primary: #FF5B2E;
+  --c-primary-deep: #E63E0F;
+  --c-primary-glow: #FF7A4E;
+  --c-secondary: #1E56FF;
+
+  --c-bg: #FFF8F4;
+  --c-bg-alt: #FFEDE2;
+  --c-bg-warm: #FFF0E6;
+  --c-fg: var(--c-ink);
+  --c-muted: #3D434D;
+  --c-border: color-mix(in srgb, var(--c-ink) 10%, transparent);
+  --c-border-strong: color-mix(in srgb, var(--c-ink) 20%, transparent);
+
+  --f-display: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+  --f-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --f-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-xs: clamp(0.72rem, 0.70rem + 0.10vw, 0.80rem);
+  --fs-sm: clamp(0.85rem, 0.82rem + 0.15vw, 0.95rem);
+  --fs-base: clamp(1.00rem, 0.96rem + 0.20vw, 1.10rem);
+  --fs-md: clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
+  --fs-lg: clamp(1.50rem, 1.30rem + 1.00vw, 2.10rem);
+  --fs-xl: clamp(2.10rem, 1.70rem + 2.00vw, 3.40rem);
+  --fs-2xl: clamp(2.80rem, 2.00rem + 4.00vw, 5.40rem);
+  --fs-3xl: clamp(3.80rem, 2.40rem + 7.50vw, 11rem);
+  --fs-hero: clamp(4rem, 2.5rem + 9vw, 14rem);
+
+  --lh-tight: 1.02;
+  --lh-snug: 1.15;
+  --lh-normal: 1.5;
+  --lh-loose: 1.65;
+
+  --ls-tight: -0.03em;
+  --ls-display: -0.025em;
+  --ls-wide: 0.14em;
+  --ls-mono: 0.04em;
+
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-24: 6rem;
+  --s-32: 8rem;
+  --s-section: clamp(7rem, 6rem + 6vw, 11rem);
+
+  --w-max: 1440px;
+  --w-prose: 62ch;
+  --gutter: clamp(1.25rem, 0.8rem + 2vw, 2.5rem);
+  --col-gap: clamp(1rem, 0.6rem + 1.5vw, 2rem);
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.10);
+  --shadow-2: 0 12px 40px -10px rgba(0, 0, 0, 0.14);
+  --shadow-glow: 0 0 60px -10px color-mix(in srgb, var(--c-blue) 35%, transparent);
+  --shadow-glow-primary: 0 0 80px -8px color-mix(in srgb, var(--c-primary) 55%, transparent);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 180ms;
+  --dur-base: 360ms;
+  --dur-slow: 720ms;
+  --dur-epic: 1200ms;
+
+  --z-base: 1;
+  --z-header: 50;
+  --z-overlay: 80;
+  --z-modal: 100;
+  --z-cursor: 200;
+
+  --g-blue: linear-gradient(135deg, var(--c-blue) 0%, var(--c-blue-deep) 100%);
+  --g-primary: linear-gradient(135deg, var(--c-primary) 0%, var(--c-primary-deep) 100%);
+  --g-ink: linear-gradient(180deg, rgba(14, 17, 22, 0) 0%, rgba(14, 17, 22, 0.85) 70%, var(--c-ink) 100%);
+
+  --duotone: url(#duotone-up);
+  --sticky-h: 64px;
+  --progress-h: 2px;
+
+  color-scheme: light only;
+}
+
+:root[data-theme="dark"] {
+  --c-bg: #0E1116;
+  --c-bg-alt: #151A22;
+  --c-fg: var(--c-paper);
+  --c-muted: #8A929C;
+  --c-border: color-mix(in srgb, var(--c-paper) 10%, transparent);
+  --c-border-strong: color-mix(in srgb, var(--c-paper) 22%, transparent);
+  color-scheme: dark;
+}
+:root[data-theme="dark"] body { color: var(--c-paper); }
+:root[data-theme="dark"] h1, :root[data-theme="dark"] h2, :root[data-theme="dark"] h3, :root[data-theme="dark"] h4 { color: var(--c-paper); }
+:root[data-theme="dark"] .card { background: var(--c-ink-raised); }
+:root[data-theme="dark"] .card-title { color: var(--c-paper); }
+:root[data-theme="dark"] .pillar h4,
+:root[data-theme="dark"] .method-item h4,
+:root[data-theme="dark"] .manifesto-body p:first-child::first-letter,
+:root[data-theme="dark"] .testimonial blockquote,
+:root[data-theme="dark"] .testimonial-author strong,
+:root[data-theme="dark"] .cta-final .phone-line a { color: var(--c-paper); }
+:root[data-theme="dark"] .manifesto-title em { color: var(--c-blue-glow); }
+:root[data-theme="dark"] .site-header.is-scrolled { background: color-mix(in srgb, var(--c-ink) 82%, transparent); }
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+    --dur-slow: 0ms;
+    --dur-epic: 0ms;
+  }
+}
